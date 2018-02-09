@@ -30,7 +30,7 @@ TABS.landing.initialize = function (callback) {
       bottomSection.append(' <a href="#" lang="' + element + '" i18n="language_' + element + '"></a>');
     });
     bottomSection.find('a').each(function(index) {
-      var element = $(this);
+/*      var element = $(this);
       element.click(function(){
         var element = $(this);
         var languageSelected = element.attr('lang');
@@ -39,7 +39,7 @@ TABS.landing.initialize = function (callback) {
           i18n.changeLanguage(languageSelected);
           showLang(languageSelected);
         }
-      });
+      });*/
     });
     showLang(i18n.selectedLanguage);
     // translate to user-selected language
