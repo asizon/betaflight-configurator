@@ -89,6 +89,9 @@
     "analyticsOptOut": {
         "message": "crwdns8831:0crwdne8831:0"
     },
+    "cordovaForceComputerUI": {
+        "message": "crwdns10174:0crwdne10174:0"
+    },
     "language_changed": {
         "message": "crwdns9482:0crwdne9482:0"
     },
@@ -134,6 +137,10 @@
         "message": "crwdns9502:0crwdne9502:0",
         "description": "Don't translate!!!"
     },
+    "language_hu": {
+        "message": "crwdns10146:0crwdne10146:0",
+        "description": "Don't translate!!!"
+    },
     "language_id": {
         "message": "crwdns9504:0crwdne9504:0",
         "description": "Don't translate!!!"
@@ -152,6 +159,10 @@
     },
     "language_lv": {
         "message": "crwdns9512:0crwdne9512:0",
+        "description": "Don't translate!!!"
+    },
+    "language_nl": {
+        "message": "crwdns10238:0crwdne10238:0",
         "description": "Don't translate!!!"
     },
     "language_pt": {
@@ -176,6 +187,10 @@
     },
     "language_zh_CN": {
         "message": "crwdns9520:0crwdne9520:0",
+        "description": "Don't translate!!!"
+    },
+    "language_zh_TW": {
+        "message": "crwdns10134:0crwdne10134:0",
         "description": "Don't translate!!!"
     },
     "sensorDataFlashNotFound": {
@@ -281,6 +296,9 @@
     },
     "tabHelp": {
         "message": "crwdns5355:0crwdne5355:0"
+    },
+    "tabOptions": {
+        "message": "crwdns10176:0crwdne10176:0"
     },
     "tabSetup": {
         "message": "crwdns5356:0crwdne5356:0"
@@ -478,7 +496,7 @@
         "message": "crwdns5414:0$1crwdne5414:0"
     },
     "firmwareTypeNotSupported": {
-        "message": "crwdns5415:0crwdne5415:0"
+        "message": "crwdns10232:0crwdne10232:0"
     },
     "firmwareUpgradeRequired": {
         "message": "crwdns5416:0crwdne5416:0"
@@ -936,6 +954,10 @@
         "message": "crwdns9947:0crwdne9947:0",
         "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
     },
+    "initialSetupArmingDisableFlagsTooltipMOTOR_PROTO": {
+        "message": "crwdns10138:0crwdne10138:0",
+        "description": "Message that pops up to describe the MOTOR_PROTO arming disable flag"
+    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "crwdns8986:0crwdne8986:0",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
@@ -1082,7 +1104,10 @@
         "message": "crwdns5563:0crwdne5563:0"
     },
     "featureANTI_GRAVITY": {
-        "message": "crwdns5564:0crwdne5564:0"
+        "message": "crwdns10150:0crwdne10150:0"
+    },
+    "featureANTI_GRAVITYTip": {
+        "message": "crwdns10152:0crwdne10152:0"
     },
     "featureDYNAMIC_FILTER": {
         "message": "crwdns5565:0crwdne5565:0"
@@ -1430,6 +1455,15 @@
     "configurationButtonSave": {
         "message": "crwdns5649:0crwdne5649:0"
     },
+    "dialogDynFiltersChangeTitle": {
+        "message": "crwdns10226:0crwdne10226:0"
+    },
+    "dialogDynFiltersChangeNote": {
+        "message": "crwdns10228:0crwdne10228:0"
+    },
+    "dialogDynFiltersConfirm": {
+        "message": "crwdns10230:0crwdne10230:0"
+    },
     "portsIdentifier": {
         "message": "crwdns5650:0crwdne5650:0"
     },
@@ -1520,6 +1554,9 @@
     "portsFunction_RUNCAM_DEVICE_CONTROL": {
         "message": "crwdns9040:0crwdne9040:0"
     },
+    "portsFunction_FRSKY_OSD": {
+        "message": "crwdns10148:0crwdne10148:0"
+    },
     "pidTuningProfileOption": {
         "message": "crwdns6372:0$1crwdne6372:0"
     },
@@ -1596,7 +1633,7 @@
         "description": "D Min feature helpicon message"
     },
     "pidTuningDMinHelp": {
-        "message": "crwdns9752:0crwdne9752:0",
+        "message": "crwdns10140:0crwdne10140:0",
         "description": "D Min helpicon message on PID table titlebar"
     },
     "pidTuningPidSettings": {
@@ -1723,6 +1760,33 @@
     },
     "pidTuningDtermSetpointTransitionWarning": {
         "message": "crwdns8732:0$t(warningTitle.message)crwdne8732:0"
+    },
+    "pidTuningFfInterpolateSp": {
+        "message": "crwdns10156:0crwdne10156:0"
+    },
+    "pidTuningFfInterpolateSpHelp": {
+        "message": "crwdns10158:0crwdne10158:0"
+    },
+    "pidTuningFfInterpolate": {
+        "message": "crwdns10160:0crwdne10160:0"
+    },
+    "pidTuningFfInterpolateSpOptionNoAverage": {
+        "message": "crwdns10162:0crwdne10162:0"
+    },
+    "pidTuningFfInterpolateSpOptionAverage2": {
+        "message": "crwdns10164:0crwdne10164:0"
+    },
+    "pidTuningFfInterpolateSpOptionAverage3": {
+        "message": "crwdns10166:0crwdne10166:0"
+    },
+    "pidTuningFfInterpolateSpOptionAverage4": {
+        "message": "crwdns10168:0crwdne10168:0"
+    },
+    "pidTuningFfSmoothFactor": {
+        "message": "crwdns10170:0crwdne10170:0"
+    },
+    "pidTuningFfBoost": {
+        "message": "crwdns10172:0crwdne10172:0"
     },
     "pidTuningProportional": {
         "message": "crwdns5700:0crwdne5700:0"
@@ -2445,6 +2509,40 @@
     "motorsEnableControl": {
         "message": "crwdns6381:0crwdne6381:0"
     },
+    "motorOutputReorderDialogClose": {
+        "message": "crwdns10244:0crwdne10244:0"
+    },
+    "motorOutputReorderDialogAgree": {
+        "message": "crwdns10246:0crwdne10246:0"
+    },
+    "motorsRemapDialogTitle": {
+        "message": "crwdns10248:0crwdne10248:0"
+    },
+    "motorOutputReorderDialogOpen": {
+        "message": "crwdns10250:0crwdne10250:0"
+    },
+    "motorOutputReorderDialogSelectSpinningMotor": {
+        "message": "crwdns10252:0crwdne10252:0"
+    },
+    "motorOutputReorderDialogRemapIsDone": {
+        "message": "crwdns10254:0crwdne10254:0"
+    },
+    "motorsRemapDialogUnderstandRisks": {
+        "message": "crwdns10256:0crwdne10256:0"
+    },
+    "motorsRemapDialogRiskNotice": {
+        "message": "crwdns10258:0crwdne10258:0"
+    },
+    "motorsRemapDialogExplanations": {
+        "message": "crwdns10260:0crwdne10260:0"
+    },
+    "motorsRemapDialogSave": {
+        "message": "crwdns10262:0crwdne10262:0"
+    },
+    "motorsRemapDialogStartOver": {
+        "message": "crwdns10264:0crwdne10264:0"
+    },
+>>>>>>> c9010945680ae6172f2a184d0b3499e39c8a1d32
     "sensorsInfo": {
         "message": "crwdns5889:0crwdne5889:0"
     },
@@ -3282,10 +3380,10 @@
         "message": "crwdns9968:0crwdne9968:0"
     },
     "pidTuningMotorLimit": {
-        "message": "crwdns9970:0crwdne9970:0"
+        "message": "crwdns10142:0[%]crwdne10142:0"
     },
     "pidTuningMotorLimitHelp": {
-        "message": "crwdns10128:0crwdne10128:0"
+        "message": "crwdns10144:0crwdne10144:0"
     },
     "pidTuningCellCount": {
         "message": "crwdns9974:0crwdne9974:0"
@@ -3527,6 +3625,9 @@
     "pidTuningDTermLowpassDynType": {
         "message": "crwdns9034:0crwdne9034:0"
     },
+    "pidTuningDTermLowpassDynExpo": {
+        "message": "crwdns10154:0crwdne10154:0"
+    },
     "pidTuningDTermNotchFiltersGroup": {
         "message": "crwdns8749:0crwdne8749:0"
     },
@@ -3547,6 +3648,15 @@
     },
     "pidTuningVbatPidCompensationHelp": {
         "message": "crwdns8724:0$t(powerBatteryMaximum.message)crwdnd8724:0$t(tabPower.message)crwdne8724:0"
+    },
+    "pidTuningVbatSagCompensation": {
+        "message": "crwdns10220:0crwdne10220:0"
+    },
+    "pidTuningVbatSagCompensationHelp": {
+        "message": "crwdns10222:0crwdne10222:0"
+    },
+    "pidTuningVbatSagValue": {
+        "message": "crwdns10224:0crwdne10224:0"
     },
     "pidTuningItermRotation": {
         "message": "crwdns8787:0crwdne8787:0"
@@ -3612,7 +3722,7 @@
         "message": "crwdns8861:0crwdne8861:0"
     },
     "pidTuningIdleMinRpm": {
-        "message": "crwdns9984:0[rpm]crwdne9984:0"
+        "message": "crwdns10136:0crwdne10136:0"
     },
     "pidTuningIdleMinRpmHelp": {
         "message": "crwdns10130:0$t(tabMotorTesting.message)crwdne10130:0"
@@ -3866,6 +3976,9 @@
     "powerVoltageHead": {
         "message": "crwdns6145:0crwdne6145:0"
     },
+    "powerVoltageWarning": {
+        "message": "crwdns10240:0crwdne10240:0"
+    },
     "powerVoltageValue": {
         "message": "crwdns6146:0$1crwdne6146:0"
     },
@@ -3874,9 +3987,6 @@
     },
     "powerVoltageCalibratedScale": {
         "message": "crwdns9176:0crwdne9176:0"
-    },
-    "powerAmperageValue": {
-        "message": "crwdns6147:0$1crwdne6147:0"
     },
     "powerVoltageId10": {
         "message": "crwdns6148:0crwdne6148:0"
@@ -3958,6 +4068,12 @@
     },
     "powerAmperageHead": {
         "message": "crwdns6174:0crwdne6174:0"
+    },
+    "powerAmperageWarning": {
+        "message": "crwdns10242:0crwdne10242:0"
+    },
+    "powerAmperageValue": {
+        "message": "crwdns6147:0$1crwdne6147:0"
     },
     "powerAmperageId10": {
         "message": "crwdns6175:0crwdne6175:0"
@@ -5635,5 +5751,74 @@
     "gpsSbasNone": {
         "message": "crwdns10040:0crwdne10040:0",
         "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "dialogFileNameTitle": {
+        "message": "crwdns10178:0crwdne10178:0"
+    },
+    "dialogFileNameDescription": {
+        "message": "crwdns10180:0{{folder}}crwdne10180:0"
+    },
+    "dialogFileAlreadyExistsTitle": {
+        "message": "crwdns10182:0crwdne10182:0"
+    },
+    "dialogFileAlreadyExistsDescription": {
+        "message": "crwdns10184:0crwdne10184:0"
+    },
+    "cordovaCheckingWebview": {
+        "message": "crwdns10186:0crwdne10186:0"
+    },
+    "cordovaIncompatibleWebview": {
+        "message": "crwdns10188:0crwdne10188:0"
+    },
+    "cordovaWebviewTroubleshootingMsg": {
+        "message": "crwdns10190:0crwdne10190:0"
+    },
+    "cordovaWebviewTroubleshootingMsg2": {
+        "message": "crwdns10192:0crwdne10192:0"
+    },
+    "cordovaAvailableWebviews": {
+        "message": "crwdns10194:0crwdne10194:0"
+    },
+    "cordovaWebviewInstall": {
+        "message": "crwdns10196:0{{app}}crwdne10196:0"
+    },
+    "cordovaWebviewInstallBtn": {
+        "message": "crwdns10198:0crwdne10198:0"
+    },
+    "cordovaWebviewUninstall": {
+        "message": "crwdns10200:0{{app}}crwdne10200:0"
+    },
+    "cordovaWebviewUninstallBtn1": {
+        "message": "crwdns10202:0crwdne10202:0"
+    },
+    "cordovaWebviewUninstallBtn2": {
+        "message": "crwdns10204:0crwdne10204:0"
+    },
+    "cordovaWebviewUpdate": {
+        "message": "crwdns10206:0{{app}}crwdne10206:0"
+    },
+    "cordovaWebviewUpdateBtn": {
+        "message": "crwdns10208:0crwdne10208:0"
+    },
+    "cordovaWebviewEnable": {
+        "message": "crwdns10210:0{{app}}crwdne10210:0"
+    },
+    "cordovaWebviewEnableBtn": {
+        "message": "crwdns10212:0crwdne10212:0"
+    },
+    "cordovaWebviewIncompatible": {
+        "message": "crwdns10214:0crwdne10214:0"
+    },
+    "cordovaNoWebview": {
+        "message": "crwdns10216:0crwdne10216:0"
+    },
+    "cordovaWebviewUsed": {
+        "message": "crwdns10218:0crwdne10218:0"
+    },
+    "cordovaExitAppTitle": {
+        "message": "crwdns10234:0crwdne10234:0"
+    },
+    "cordovaExitAppMessage": {
+        "message": "crwdns10236:0crwdne10236:0"
     }
 }
