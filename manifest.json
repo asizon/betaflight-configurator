@@ -18,6 +18,7 @@
         }
     },
     "permissions": [
+        "https://cdn.crowdin.com/*",
         "https://api.openstreetmap.org/",
         "https://*.github.com/",
         "https://*.githubusercontent.com/",
