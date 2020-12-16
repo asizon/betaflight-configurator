@@ -248,11 +248,11 @@
 
 .tab-osd .right {
   float: right;
-  margin-top: -7px;
 }
 
 .tab-osd .preview .gui_box_titlebar {
   position: relative;
+  margin-bottom: 0;
 }
 
 .tab-osd .preview .gui_box_titlebar label {
@@ -274,6 +274,7 @@
 
 .tab-osd .preview .gui_box_bottombar {
   text-align: center;
+  margin-bottom: -3.5px;
 }
 
 .tab-osd .preview .char {
@@ -455,6 +456,7 @@ button {
   position: sticky;
   top: 0;
   margin-left: calc((100% - 362px) / 2);
+  padding-bottom: 3.5px;
 
 
 /* please don't copy the generic background image from another project
