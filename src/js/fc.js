@@ -667,6 +667,7 @@ const FC = {
             slider_dterm_filter_multiplier:     0,
             slider_gyro_filter:                 0,
             slider_gyro_filter_multiplier:      0,
+            slider_pitch_pd_ratio:              0,
         };
     },
 

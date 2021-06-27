@@ -1492,6 +1492,7 @@ MspHelper.prototype.process_data = function(dataHandler) {
                 FC.TUNING_SLIDERS.slider_pd_gain = data.readU8();
                 FC.TUNING_SLIDERS.slider_dmin_ratio = data.readU8();
                 FC.TUNING_SLIDERS.slider_ff_gain = data.readU8();
+                FC.TUNING_SLIDERS.slider_pitch_pd_ratio = data.readU8();
                 FC.TUNING_SLIDERS.slider_dterm_filter = data.readU8();
                 FC.TUNING_SLIDERS.slider_dterm_filter_multiplier = data.readU8();
                 FC.TUNING_SLIDERS.slider_gyro_filter = data.readU8();
@@ -2311,6 +2312,7 @@ MspHelper.prototype.crunch = function(code) {
                   .push8(FC.TUNING_SLIDERS.slider_pd_gain)
                   .push8(FC.TUNING_SLIDERS.slider_dmin_ratio)
                   .push8(FC.TUNING_SLIDERS.slider_ff_gain)
+                  .push8(FC.TUNING_SLIDERS.slider_pitch_pd_ratio)
                   .push8(FC.TUNING_SLIDERS.slider_dterm_filter)
                   .push8(FC.TUNING_SLIDERS.slider_dterm_filter_multiplier)
                   .push8(FC.TUNING_SLIDERS.slider_gyro_filter)

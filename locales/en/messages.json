@@ -3658,6 +3658,10 @@
         "message": "D_min Gain drop:",
         "description": "D Min slider label"
     },
+    "pidTuningPitchPdRatioSlider": {
+        "message": "Pitch PD Ratio:",
+        "description": "D Min slider label"
+    },
     "pidTuningDMinRatioSliderHelp": {
         "message": "Controls how much D-gains are suppressed in normal forward flight.  Lower the slider to drop the D-gains MORE in normal forward flight.  Raise the slider to drop D-gains LESS in normal forward flight.<br /><br />With D_min enabled, the Active D-gain changes during flight. In normal forward flight (with D_min enabled) the Active D-gain hovers just above the D_min Gain values. During sharp stick moves or prop-wash, the Active D-gain raises to the D_max gains.  See the D_min / D_max tips above for more detials.<br /><br />Lower D-gains can help smooth out forward flight, negating the need to increase filtering on the Gyro and/or D-term in the Filters Setting tab; while it boost the Active D-gains to the D_max values when more D-term is needed to control overshooting and/or to stabiliize the quad in prop-wash conditions or to resist outside forces (wind).",
         "description": "D_min slider helpicon message"

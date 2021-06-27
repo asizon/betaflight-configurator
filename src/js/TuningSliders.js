@@ -9,6 +9,7 @@ const TuningSliders = {
     sliderPDGain: 1,
     sliderDMinRatio: 1,
     sliderFFGain: 1,
+    sliderPitchPdRatio: 1,
     pidSlidersUnavailable: false,
     GyroSliderUnavailable: false,
     DTermSliderUnavailable: false,
@@ -116,6 +117,7 @@ TuningSliders.initPidSlidersPosition = function() {
         this.sliderPDGain = FC.TUNING_SLIDERS.slider_pd_gain / 100;
         this.sliderDMinRatio = FC.TUNING_SLIDERS.slider_dmin_ratio / 100;
         this.sliderFFGain = FC.TUNING_SLIDERS.slider_ff_gain / 100;
+        this.sliderPitchPdRatio = FC.TUNING_SLIDERS.slider_pitch_pd_ratio / 100;
     }
 
     $('output[name="sliderMasterMultiplier-number"]').val(this.sliderMasterMultiplier);
@@ -125,6 +127,7 @@ TuningSliders.initPidSlidersPosition = function() {
     $('output[name="sliderPDGain-number"]').val(this.sliderPDGain);
     $('output[name="sliderDMinRatio-number"]').val(this.sliderDMinRatio);
     $('output[name="sliderFFGain-number"]').val(this.sliderFFGain);
+    $('output[name="sliderPitchPdRatio-number"]').val(this.sliderPitchPdRatio);
 
     $('#sliderMasterMultiplier').val(this.downscaleSliderValue(this.sliderMasterMultiplier));
     $('#sliderRollPitchRatio').val(this.downscaleSliderValue(this.sliderRollPitchRatio));
@@ -133,6 +136,7 @@ TuningSliders.initPidSlidersPosition = function() {
     $('#sliderPDGain').val(this.downscaleSliderValue(this.sliderPDGain));
     $('#sliderDMinRatio').val(this.downscaleSliderValue(this.sliderDMinRatio));
     $('#sliderFFGain').val(this.downscaleSliderValue(this.sliderFFGain));
+    $('#sliderPitchPdRatio').val(this.downscaleSliderValue(this.sliderPitchPdRatio));
 };
 
 TuningSliders.initGyroFilterSliderPosition = function() {
@@ -170,6 +174,7 @@ TuningSliders.resetPidSliders = function() {
         this.sliderPDGain = 1;
         this.sliderDMinRatio = 1;
         this.sliderFFGain = 1;
+        this.sliderPitchPdRatio = 1;
     }
 
     if (semver.lt(FC.CONFIG.apiVersion, API_VERSION_1_44)) {
@@ -394,6 +399,7 @@ TuningSliders.updateFormPids = function(updateSlidersOnly = false) {
     $('output[name="sliderPDGain-number"]').val(this.sliderPDGain);
     $('output[name="sliderDMinRatio-number"]').val(this.sliderDMinRatio);
     $('output[name="sliderFFGain-number"]').val(this.sliderFFGain);
+    $('output[name="sliderPitchPdRatio-number"]').val(this.sliderPitchPdRatio);
 
 };
 
@@ -472,6 +478,7 @@ TuningSliders.calculateNewPids = function(updateSlidersOnly = false) {
         FC.TUNING_SLIDERS.slider_pd_gain = Math.round(this.sliderPDGain * 20) * 5;
         FC.TUNING_SLIDERS.slider_dmin_ratio = Math.round(this.sliderDMinRatio * 20) * 5;
         FC.TUNING_SLIDERS.slider_ff_gain = Math.round(this.sliderFFGain * 20) * 5;
+        FC.TUNING_SLIDERS.slider_pitch_pd_ratio = Math.round(this.sliderPitchPdRatio * 20) * 5;
 
         MSP.promise(MSPCodes.MSP_SET_TUNING_SLIDERS, mspHelper.crunch(MSPCodes.MSP_SET_TUNING_SLIDERS))
         .then(() => MSP.promise(MSPCodes.MSP_PID))

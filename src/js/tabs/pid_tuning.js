@@ -1026,6 +1026,7 @@ TABS.pid_tuning.initialize = function (callback) {
             FC.TUNING_SLIDERS.slider_pd_gain = Math.round(TuningSliders.sliderPDGain * 20) * 5;
             FC.TUNING_SLIDERS.slider_dmin_ratio = Math.round(TuningSliders.sliderDMinRatio * 20) * 5;
             FC.TUNING_SLIDERS.slider_ff_gain = Math.round(TuningSliders.sliderFFGain * 20) * 5;
+            FC.TUNING_SLIDERS.slider_pitch_pd_ratio = Math.round(TuningSliders.sliderPitchPdRatio * 20) * 5;
 
             FC.TUNING_SLIDERS.slider_dterm_filter = TuningSliders.sliderDTermFilter ? 1 : 0;
             FC.TUNING_SLIDERS.slider_dterm_filter_multiplier = Math.round(TuningSliders.sliderDTermFilterMultiplier * 20) * 5;
@@ -1879,7 +1880,7 @@ TABS.pid_tuning.initialize = function (callback) {
                 $('.tab-pid_tuning .advancedSlider').hide();
                 $('.tab-pid_tuning .sliderMode').hide();
             } else {
-                allPidTuningSliders = $('#sliderMasterMultiplier, #sliderRollPitchRatio, #sliderIGain, #sliderPDRatio, #sliderPDGain, #sliderDMinRatio, #sliderFFGain');
+                allPidTuningSliders = $('#sliderMasterMultiplier, #sliderRollPitchRatio, #sliderIGain, #sliderPDRatio, #sliderPDGain, #sliderDMinRatio, #sliderFFGain, #sliderPitchPdRatio');
                 $('.tab-pid-tuning .baseSlider').show();
                 $('.tab-pid-tuning .MasterSlider').show();
             }
@@ -1914,6 +1915,8 @@ TABS.pid_tuning.initialize = function (callback) {
                     TuningSliders.sliderDMinRatio = scaledValue;
                 } else if (slider.is('#sliderFFGain')) {
                     TuningSliders.sliderFFGain = scaledValue;
+                } else if (slider.is('#sliderPitchPdRatio')) {
+                    TuningSliders.sliderPitchPdRatio = scaledValue;
                 }
                 TuningSliders.calculateNewPids();
                 self.analyticsChanges['PidTuningSliders'] = "On";
@@ -1943,6 +1946,8 @@ TABS.pid_tuning.initialize = function (callback) {
                     TuningSliders.sliderDMinRatio = 1;
                 } else if (slider.is('#sliderFFGain')) {
                     TuningSliders.sliderFFGain = 1;
+                } else if (slider.is('#sliderPitchPdRatio')) {
+                    TuningSliders.sliderPitchPdRatio = 1;
                 }
                 TuningSliders.calculateNewPids();
                 TuningSliders.updatePidSlidersDisplay();
