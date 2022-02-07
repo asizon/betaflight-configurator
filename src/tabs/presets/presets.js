@@ -56,7 +56,7 @@ TABS.presets.readDom = function() {
     this._domListTooManyFound = $("#presets_list_too_many_found");
 };
 
-TABS.presets.getPickedPresetsCli = function() {
+ TABS.presets.getPickedPresetsCli = function() {
     let result = [];
     this.pickedPresetList.forEach(pickedPreset => {
         result.push(...pickedPreset.presetCli);
