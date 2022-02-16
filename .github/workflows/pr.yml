@@ -7,6 +7,34 @@ on:
       - '*-maintenance'
 
 jobs:
+  delete-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deete artifacts from previous runs
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const runsResponse = await github.request("GET /repos/${{ github.repository }}/actions/runs")
+            for (workflow_run of runsResponse.data.workflow_runs) {
+              if (workflow_run.name == "${{ github.workflow }}" && workflow_run.status !== "in_progress") {
+                console.log(`Deleting artifacts from workflow run ${workflow_run.id}`)
+                const response = await github.request(`GET /repos/$/actions/runs/${workflow_run.id}/artifacts`)
+                for (artifact of response.data.artifacts) {
+                  console.log(`Deleting artifact with id ${artifact.id}`)
+                  const deleteResponse = await github.request(`DELETE /repos/$/actions/artifacts/${artifact.id}`)
+                }
+              }
+            }
   ci:
     name: CI
     uses: ./.github/workflows/ci.yml
+  hide:
+    name: Hide artifact links
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Hide artifact links
+        uses: int128/hide-comment-action@v1
+        with:
+          starts-with: "Do you want to test this code? Here you have an automated build:"
+          ends-with: "WARNING: It may be unstable and result in corrupted configurations or data loss. Use only for testing!"
